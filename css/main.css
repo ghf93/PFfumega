@@ -1,0 +1,13 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilos de home */
+.index-header {
+  background-color: #d0e6fa; }
+
+main {
+  display: flex;
+  justify-content: center; }

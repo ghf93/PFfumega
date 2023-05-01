@@ -1,0 +1,19 @@
+// variables 
+@import "../utilidades/variables";
+
+// mixin 
+
+@import "../utilidades/mixin";
+
+@import "../utilidades/extend";
+
+
+/* estilos de home */
+
+.index-header{
+    background-color: $color-principal;
+}
+main{
+    @include flex;
+}
+
