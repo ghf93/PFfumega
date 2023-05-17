@@ -60,22 +60,34 @@
 
     
 
-    <main class="ital">
+    <main class="imagenes-main"> 
         
-
-
-        <div class="aspirado">
-            <img src="img/aspirado.jpg" alt="imagen de aspirado">            
-        </div>
-        <div class="camisas">
-            <img src="img/camisas.jpg" alt="imagen de camisas">            
-        </div>
-        <div class="embolsado">
-            <img src="img/embolsado.jpg" alt="imagen de embolsado">            
-        </div>
-        <div class="planchado">
-            <img src="img/planchado.jpg" alt="imagen de planchado">            
-        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/aspirado.jpg" class="d-block w-100" alt="aspirado1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/camisas.jpg" class="d-block w-100" alt="camisas1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/embolsado.jpg" class="d-block w-100" alt="embolsado1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/planchado.jpg" class="d-block w-100" alt="planchado1">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+                
     </main>
 
     <footer>

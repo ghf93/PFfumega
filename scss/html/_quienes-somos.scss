@@ -1,2 +1,45 @@
 // variables 
 @import "../utilidades/variables";
+
+@import "../utilidades/mixin";
+
+@import "../utilidades/extend";
+
+
+/* estilos de quienes somos */
+
+
+
+main {
+    
+    .imagen-responsive {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    /* Estilos para tablet y versiones más grandes */
+    .imagen-responsive {
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Estilos para desktop y versiones más grandes */
+    .imagen-responsive {
+      max-width: 30%;
+    }
+  }
+  
+
+  .subtitulo {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
+
+  
