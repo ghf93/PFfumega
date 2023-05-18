@@ -11,112 +11,128 @@
 /* Estilos de home */
 
 body {
-  background-color: rgb(7, 175, 182);
-  font-family: 'Merrieweather Sans', sans-serif;
-}
+    background-color: $color-fondo;
+    font-family: 'Merrieweather Sans', sans-serif;
 
-header {
-  background-color: $color-body;
-  font-family: 'Merrieweather Sans', sans-serif;
-}
 
-.tintoreria {
-  background-color: $color-principal;
-  text-align: center;
-}
-.tintoreria .titulo {
-  font-size: x-large;
-  font-style: initial;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.tintoreria .subtitulo {
-  background-color: rgb(208, 230, 250);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large;
-}
-
-.color-menu {
-  color: rgb(243, 235, 235);
-}
-
-.color-menu:hover {
-  border-bottom: 2px solid rgb(37, 137, 145);
-  color: black;
-}
-
-.subtitulo {
-  font-size: 15px;
-  font-style: oblique;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-}
-
-main {
-  background-color: whitesmoke;
-  text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  font-weight: bold;
-
-      .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-        img{
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
+  header {
+    background-color: $color-body;
+    font-family: 'Merrieweather Sans', sans-serif;
     }
+
+        .tintoreria {
+          // mixin
+          @include rounded-border($border-radius);
+          background-color: $color-principal;
+          text-align: center;
+                  .titulo {
+                    font-size: x-large;
+                    font-style: initial;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                  }
+                  
+                  
+
+                  }
+
+                .color-menu {
+                    color: rgb(243, 235, 235);
+                  }
+
+
+                .color-menu:hover {
+          border-bottom: 2px solid rgb(37, 137, 145);
+          color: black;
+
+
+                .subtitulo {
+                  // extend
+                  @extend .subtitulo-estilo;
+                }
+                .subtitulo {
+                font-size: 15px;
+                font-style: oblique;
+                }
+        }  
   }
+
+ 
 
   
 
+  
+
+  
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  main {
+    background-color: whitesmoke;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-weight: bold;
+
+        .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+          img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+      }
+    }
+
+    
 
 
-footer {
-  background-color: rgb(208, 230, 250);
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
-  position: relative;
-}
-footer p {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 12px;
-}
-footer img {
-  width: 50px;
-  height: 50px;
-}
 
-.redes-footer {
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra */
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 767px) {
   footer {
-    padding: 10px;
-    font-size: 18px;
+    background-color: rgb(208, 230, 250);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+  }
+  footer p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
   }
   footer img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
-  main {
-    padding-left: 20px;
-    padding-right: 20px;
+
+  .redes-footer {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra */
   }
-}
+
+  /* Media query para dispositivos móviles */
+  @media (max-width: 767px) {
+    footer {
+      padding: 10px;
+      font-size: 18px;
+    }
+    footer img {
+      width: 30px;
+      height: 30px;
+    }
+    main {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+

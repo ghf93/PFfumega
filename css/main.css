@@ -5,39 +5,37 @@
   padding: 0;
   box-sizing: border-box; }
 
+.subtitulo-estilo, body .color-menu:hover .subtitulo {
+  font-size: 15px;
+  font-style: oblique; }
+
+.subtitulo-estilo, body .color-menu:hover .subtitulo {
+  font-size: 15px;
+  font-style: oblique; }
+
 /* Estilos de home */
 body {
   background-color: #07afb6;
   font-family: 'Merrieweather Sans', sans-serif; }
-
-header {
-  background-color: #4aafb6;
-  font-family: 'Merrieweather Sans', sans-serif; }
-
-.tintoreria {
-  background-color: #d0e6fa;
-  text-align: center; }
-
-.tintoreria .titulo {
-  font-size: x-large;
-  font-style: initial;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-
-.tintoreria .subtitulo {
-  background-color: #d0e6fa;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large; }
-
-.color-menu {
-  color: #f3ebeb; }
-
-.color-menu:hover {
-  border-bottom: 2px solid #258991;
-  color: black; }
-
-.subtitulo {
-  font-size: 15px;
-  font-style: oblique; }
+  body header {
+    background-color: #4aafb6;
+    font-family: 'Merrieweather Sans', sans-serif; }
+  body .tintoreria {
+    border-radius: 5px;
+    background-color: #d0e6fa;
+    text-align: center; }
+    body .tintoreria .titulo {
+      font-size: x-large;
+      font-style: initial;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  body .color-menu {
+    color: #f3ebeb; }
+  body .color-menu:hover {
+    border-bottom: 2px solid #258991;
+    color: black; }
+    body .color-menu:hover .subtitulo {
+      font-size: 15px;
+      font-style: oblique; }
 
 img {
   width: 50px;
@@ -98,7 +96,10 @@ footer img {
     padding-left: 20px;
     padding-right: 20px; } }
 
-/* estilos de quienes somos */
+.subtitulo-estilo, body .color-menu:hover .subtitulo {
+  font-size: 15px;
+  font-style: oblique; }
+
 /* estilos de quienes somos */
 main .imagen-responsive {
   max-width: 100%;
@@ -133,6 +134,10 @@ main .subtitulo {
   border: 4px solid #ccc;
   border-radius: 4px;
   font-family: "Arial", sans-serif; }
+
+.subtitulo-estilo, body .color-menu:hover .subtitulo {
+  font-size: 15px;
+  font-style: oblique; }
 
 /* estilos de servicios */
 header {
@@ -173,18 +178,41 @@ main li {
 main li:last-child {
   border-bottom: none; }
 
+.subtitulo-estilo, body .color-menu:hover .subtitulo {
+  font-size: 15px;
+  font-style: oblique; }
+
 /* estilos de promociones */
-main ul p {
+main ul div.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+main p {
   text-align: center;
   background-color: #d0e6fa; }
 
-main ul p:hover {
+main p:hover {
   border-bottom: 2px groove;
   background-color: #d0e6fa; }
 
-main ul li {
+main li {
   font-size: small;
-  color: #3d3d3d; }
+  color: #3d3d3d;
+  border: 3px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+/* Estilos de promociones en versiones de tablet y desktop */
+@media (min-width: 768px) {
+  main ul li {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.subtitulo-estilo, body .color-menu:hover .subtitulo {
+  font-size: 15px;
+  font-style: oblique; }
 
 /* estilos de contacto */
 body {

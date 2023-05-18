@@ -2,12 +2,13 @@
 
 // mixin con parametros
 
-
-
-
 // mixin sin parametros
 
 @mixin flex{
     display: flex;
     justify-content: center;
 }
+
+@mixin rounded-border($radius) {
+    border-radius: $radius;
+  }
