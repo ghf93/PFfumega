@@ -10,36 +10,37 @@
 
 
 
-main {
-    
-    .imagen-responsive {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
-  
-  @media (min-width: 768px) {
-    /* Estilos para tablet y versiones más grandes */
-    .imagen-responsive {
-      max-width: 50%;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    /* Estilos para desktop y versiones más grandes */
-    .imagen-responsive {
-      max-width: 30%;
-    }
-  }
-  
+/* estilos de quienes somos */
+main .imagen-responsive {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
 
-  .subtitulo {
-    font-size: 18px;
-    color: #333;
-    margin-top: 20px;
-    font-weight: bold;
-  }
-}
+@media (min-width: 768px) {
+  
+    /* Estilos para tablet y versiones más grandes */ }
+    main .imagen-responsive {
+      max-width: 50%; } 
 
+@media (max-width: 767px) {
+    /* Estilos para dispositivos móviles */ }
+    main .imagen-responsive {
+      max-width: 80%;
+      margin: 0 auto; } 
 
+@media (min-width: 992px) {
+  
+    /* Estilos para desktop y versiones más grandes */ }
+    main .imagen-responsive {
+      max-width: 30%; } 
+
+main .subtitulo {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: 4px solid #ccc;
+  border-radius: 4px;
+  font-family: "Arial", sans-serif; }
   

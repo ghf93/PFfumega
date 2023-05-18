@@ -54,22 +54,14 @@ main {
   margin-right: auto;
   width: 100%;
   font-weight: bold; }
-
-.main .carousel-inner img {
-  width: 100% !important;
-  height: auto !important; }
-
-#carouselExample {
-  width: 100%;
-  height: 400px; }
-
-.main .carousel-inner .carousel-item img {
-  object-fit: cover; }
-
-main div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  main .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; }
+    main .image-grid img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
 
 footer {
   background-color: #d0e6fa;
@@ -88,11 +80,16 @@ footer img {
   width: 50px;
   height: 50px; }
 
+.redes-footer {
+  font-size: 14px;
+  /* Tamaño de fuente más pequeño */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  /* Sombra */ }
+
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {
   footer {
-    padding: 10px; }
-  footer h3 {
+    padding: 10px;
     font-size: 18px; }
   footer img {
     width: 30px;
@@ -102,28 +99,40 @@ footer img {
     padding-right: 20px; } }
 
 /* estilos de quienes somos */
+/* estilos de quienes somos */
 main .imagen-responsive {
   max-width: 100%;
   width: 100%;
   height: auto; }
 
 @media (min-width: 768px) {
-  main {
-    /* Estilos para tablet y versiones más grandes */ }
-    main .imagen-responsive {
-      max-width: 50%; } }
+  /* Estilos para tablet y versiones más grandes */ }
+
+main .imagen-responsive {
+  max-width: 50%; }
+
+@media (max-width: 767px) {
+  /* Estilos para dispositivos móviles */ }
+
+main .imagen-responsive {
+  max-width: 80%;
+  margin: 0 auto; }
 
 @media (min-width: 992px) {
-  main {
-    /* Estilos para desktop y versiones más grandes */ }
-    main .imagen-responsive {
-      max-width: 30%; } }
+  /* Estilos para desktop y versiones más grandes */ }
+
+main .imagen-responsive {
+  max-width: 30%; }
 
 main .subtitulo {
   font-size: 18px;
   color: #333;
   margin-top: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 10px;
+  border: 4px solid #ccc;
+  border-radius: 4px;
+  font-family: "Arial", sans-serif; }
 
 /* estilos de servicios */
 header {
@@ -140,8 +149,29 @@ main .servicios:hover {
   border-bottom: 2px groove;
   background-color: #d0e6fa; }
 
-main ul li {
+main .card-container {
+  display: flex;
+  justify-content: center; }
+
+main .card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px; }
+
+main .card-body {
+  padding: 10px; }
+
+main ul {
+  padding: 0;
   list-style: none; }
+
+main li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc; }
+
+main li:last-child {
+  border-bottom: none; }
 
 /* estilos de promociones */
 main ul p {
@@ -151,6 +181,10 @@ main ul p {
 main ul p:hover {
   border-bottom: 2px groove;
   background-color: #d0e6fa; }
+
+main ul li {
+  font-size: small;
+  color: #3d3d3d; }
 
 /* estilos de contacto */
 body {

@@ -10,16 +10,21 @@
 
 
 
-main{
-    ul{
-        p{
+main {
+    ul {
+        p {
             text-align: center;
             background-color: rgb(208, 230, 250);
         }
 
-        p:hover{
-            border-bottom: 2px groove ;
-            background-color: rgb(208, 230, 250)
+        p:hover {
+            border-bottom: 2px groove;
+            background-color: rgb(208, 230, 250);
+        }
+        
+        li {
+            font-size: small;
+            color: #3d3d3d;
         }
     }
 }
